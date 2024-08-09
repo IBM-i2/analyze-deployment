@@ -1,0 +1,30 @@
+{
+  "settings": {
+    "defaultValuesForAddedGroups": {
+      "visibleToAllUsers": false,
+      "availableInSharing": false
+    },
+    "reloadInterval": {
+      "value": 30,
+      "units": "MINUTES",
+      "enabled": true
+    },
+    "processAddedUsers": true,
+    "processAddedGroups": true,
+    "processChangedUsers": true,
+    "processChangedGroups": true,
+    "processRemovedUsers": true,
+    "processRemovedGroups": true,
+    "processEmptyGroups": true
+  },
+  "registryConfig": {
+    "userFilters": ["*"],
+    "groupFilters": ["*"],
+    "userDisplayNameMappings": [],
+    "groupDisplayNameMappings": []
+  },
+  "identityProviderConfig": {
+    "provisionUsing": "CLAIMS"
+  }
+}
+  

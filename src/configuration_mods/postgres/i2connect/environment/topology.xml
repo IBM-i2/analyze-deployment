@@ -53,8 +53,8 @@
   <solr-clusters>
     <solr-cluster id="is_cluster" zookeeper-id="zoo">
       <solr-collections>
-        <solr-collection id="daod_index" type="daod" max-shards-per-node="4" num-shards="4" num-replicas="1" />
-        <solr-collection id="recordshare_index" type="recordshare" max-shards-per-node="4" num-shards="4" num-replicas="1" />
+        <solr-collection id="daod_index" type="daod" num-shards="4" num-replicas="1" lucene-match-version=""  />
+        <solr-collection id="recordshare_index" type="recordshare" num-shards="4" num-replicas="1" lucene-match-version=""  />
       </solr-collections>
       <solr-nodes>
         <solr-node memory="512m" id="node1" host-name="solr.eianet" data-dir="/opt/i2/i2analyze/data/solr" port-number="8983" />

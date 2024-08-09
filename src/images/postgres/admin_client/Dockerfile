@@ -16,7 +16,8 @@ RUN apt-get update && \
     apt-get install -y \
     nano \
     libarchive-tools \
-    openssh-client
+    openssh-client \
+    net-tools
 
 RUN groupadd i2analyze
 RUN useradd -m -g i2analyze i2analyze

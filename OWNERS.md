@@ -13,8 +13,4 @@ routing PRs, questions, etc. to the right place.
   * Systems Architect ([@Mark-Todd-i2](https://github.com/Mark-Todd-i2))
 
 ## Developers
-* Kirk Fitzsimons ([@Kirk-Fitzsimons-i2](https://github.com/Kirk-Fitzsimons-i2))
-
-## Testers
-* Tamara Castelo ([@Tamara-Castelo-i2](https://github.com/Tamara-Castelo-i2))
-* Valentyna Lysenko ([@Valentyna-Lysenko-i2](https://github.com/Valentyna-Lysenko-i2))
+* Oleksandr Kushchak ([@Oleksandr-Kushchak-i2 ](https://github.com/Oleksandr-Kushchak-i2))

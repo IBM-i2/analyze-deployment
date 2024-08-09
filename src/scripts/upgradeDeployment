@@ -80,8 +80,9 @@ docker exec -t -u i2analyze liberty ${I2ANALYZE_PATH}/toolkit/scripts/setup -t u
 
 output "Upgrading the Solr collection"
 docker exec -u i2analyze admin_client ${I2ANALYZE_PATH}/toolkit/scripts/setup -t upgradeSolrCollections --hostname admin_client.eianet
-docker exec -u i2analyze admin_client ${I2ANALYZE_PATH}/toolkit/scripts/setup -t upgradeAllSolrIndexes --hostname admin_client.eianet
-docker exec -u i2analyze admin_client ${I2ANALYZE_PATH}/toolkit/scripts/setup -t switchStandbyMatchIndexToLive --hostname admin_client.eianet
+# This is commented out due to the requirement of it being run from liberty container introduced in 4.4.3 release.
+# docker exec -u i2analyze admin_client ${I2ANALYZE_PATH}/toolkit/scripts/setup -t upgradeAllSolrIndexes --hostname admin_client.eianet
+# docker exec -u i2analyze admin_client ${I2ANALYZE_PATH}/toolkit/scripts/setup -t switchStandbyMatchIndexToLive --hostname admin_client.eianet
 
 output "Starting Liberty"
 docker exec -u i2analyze liberty ${I2ANALYZE_PATH}/toolkit/scripts/setup -t startLiberty
