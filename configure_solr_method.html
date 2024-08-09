@@ -89,7 +89,7 @@ The script uses <code>curl</code> commands to make the REST calls.</p>
 <h2 id="configure-the-solr-collection-in-the-topologyxml-file">Configure the Solr collection in the <code>topology.xml</code> file</h2>
 <p>By default, or when <code>toolkit-configured=&quot;true&quot;</code> in the <code>solr-collection</code> element of the <code>topology.xml</code> file, the Solr collection is created by using the definitions in the <code>topology.xml</code> file.</p>
 <p>For example, the <code>&lt;solr-collection&gt;</code> element is defined as follows:</p>
-<pre><code>&lt;solr-collection toolkit-configured=&quot;true&quot; num-replicas=&quot;1&quot; id=&quot;main_index&quot; max-shards-per-node=&quot;4&quot; num-shards=&quot;4&quot;/&gt;
+<pre><code>&lt;solr-collection toolkit-configured=&quot;true&quot; num-replicas=&quot;1&quot; id=&quot;main_index&quot; num-shards=&quot;4&quot; lucene-match-version=&quot;&quot;/&gt;
 </code></pre><p>For more information about configuring the collection and the values that you can set in the topology file, see <a href="https://docs.i2group.com/analyze/c_solr.html">ZooKeeper and Solr</a>.</p>
 <p>The Solr collection is created when the <code>createSolrCollections</code> toolkit task is run the first time. After, you can use the <code>clearSearchIndex</code> toolkit task. This task clears the search index, and then recreates the collection. When Liberty starts, the search index is recreated.</p>
 <h2 id="configure-the-solr-collection-in-the-createsolrcollection-script-file">Configure the Solr collection in the <code>createSolrCollection</code> script file</h2>
@@ -98,7 +98,7 @@ The script uses <code>curl</code> commands to make the REST calls.</p>
 </blockquote>
 <p>If <code>toolkit-configured=&quot;false&quot;</code> in the <code>topology.xml</code> file, the <code>createSolrCollection</code> script is used to configure the Solr collection.</p>
 <p>For example, the <code>&lt;solr-collection&gt;</code> element is defined as follows:</p>
-<pre><code>&lt;solr-collection toolkit-configured=&quot;false&quot; num-replicas=&quot;1&quot; id=&quot;main_index&quot; max-shards-per-node=&quot;4&quot; num-shards=&quot;4&quot;/&gt;
+<pre><code>&lt;solr-collection toolkit-configured=&quot;false&quot; num-replicas=&quot;1&quot; lucene-match-version=&quot;&quot;  id=&quot;main_index&quot; num-shards=&quot;4&quot;/&gt;
 </code></pre><p>The script file contains the Solr collection configuration from the <code>topology.xml</code> file. You can then modify the Solr Collections API <code>CREATE</code> call in the script file. When i2 Analyze recreates the Solr collection, it uses the call in this file.</p>
 <p>For more information about configuring the collection by using the script, see <a href="configure_solr_collection.html">Creating a Solr collection using the <code>createSolrCollection</code> script</a>.</p>
 <h3 id="managing-changes-to-the-createsolrcollection-script-file">Managing changes to the <code>createSolrCollection</code> script file</h3>

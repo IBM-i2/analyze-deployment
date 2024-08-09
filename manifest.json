@@ -3,7 +3,7 @@
     "baseUrl": "https://i2group.github.io/analyze-deployment/"
   },
   "homepages": [],
-  "source_base_path": "/mnt/c/Users/MH102136/Documents/analyze-deployment-internal/docs",
+  "source_base_path": "/home/mhadfield/analyze-deployment-internal/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "configure_solr_method.html",
-          "hash": "FWzatRuAtviWrN9jcEIy7w=="
+          "hash": "zzZ9VXqWAKQRcqM6LoykXg=="
         }
       },
       "is_incremental": false,
@@ -231,7 +231,7 @@
       "output": {
         ".html": {
           "relative_path": "deploy_quick_start.html",
-          "hash": "gxeQZrjIQa0vPo9oRRdtqg=="
+          "hash": "JZ5tKoh9BTd1/vv9Oeie2A=="
         }
       },
       "is_incremental": false,
@@ -344,6 +344,17 @@
       "output": {
         "resource": {
           "relative_path": "images/distributed_topology_ssl.vsd"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.png"
         }
       },
       "is_incremental": false,
